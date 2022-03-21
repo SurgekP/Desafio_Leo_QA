@@ -31,11 +31,11 @@ public class AdicionarCursoTest {
         navegador.findElement(By.linkText("Courses")).click();
         navegador.findElement(By.linkText("Add a new course")).click();
         navegador.findElement(By.id("id_fullname")).click();
-        navegador.findElement(By.id("id_fullname")).sendKeys("Teste 13");
+        navegador.findElement(By.id("id_fullname")).sendKeys("Test Adicionar Curso");
         navegador.findElement(By.id("id_shortname")).click();
-        navegador.findElement(By.id("id_shortname")).sendKeys("Curto 13");
+        navegador.findElement(By.id("id_shortname")).sendKeys("Desafio Leo - QA");
         navegador.findElement(By.id("id_idnumber")).click();
-        navegador.findElement(By.id("id_idnumber")).sendKeys("13");
+        navegador.findElement(By.id("id_idnumber")).sendKeys("2022");
         navegador.findElement(By.id("id_saveanddisplay")).click();
 
 
