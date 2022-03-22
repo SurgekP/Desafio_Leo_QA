@@ -27,13 +27,14 @@ public class AdicionarCursoTest {
         navegador.findElement(By.id("loginbtn")).click();
 
         //assert - então validar que um novo curso seja adicionado com sucesso
-        navegador.findElement(By.linkText("Site administration")).click();
+        navegador.get("https://sandbox.moodledemo.net/");
+        navegador.findElement(By.xpath("//div[@id='nav-drawer']/nav[2]/ul/li/a/div/div/span[2]")).click();
         navegador.findElement(By.linkText("Courses")).click();
         navegador.findElement(By.linkText("Add a new course")).click();
         navegador.findElement(By.id("id_fullname")).click();
-        navegador.findElement(By.id("id_fullname")).sendKeys("Test Adicionar Curso");
+        navegador.findElement(By.id("id_fullname")).sendKeys("Adicionar Curso Test");
         navegador.findElement(By.id("id_shortname")).click();
-        navegador.findElement(By.id("id_shortname")).sendKeys("Desafio Leo - QA");
+        navegador.findElement(By.id("id_shortname")).sendKeys("Curso Test");
         navegador.findElement(By.id("id_idnumber")).click();
         navegador.findElement(By.id("id_idnumber")).sendKeys("2022");
         navegador.findElement(By.id("id_saveanddisplay")).click();
@@ -42,3 +43,4 @@ public class AdicionarCursoTest {
     }
 
 }
+
